@@ -46,6 +46,16 @@ export const auth = betterAuth({
       }
     }
   },
+  user: {
+    additionalFields: {
+      role: {
+        type: "string",
+        required: false,
+        defaultValue: "seeker",
+      }
+    }
+  },
+
   baseURL: baseURL,
   secret: authSecret,
   trustHost: true,
